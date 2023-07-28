@@ -4,3 +4,5 @@ Arroz
 Feijão
 Macarrão
 Sal
+Leite
+Manteiga
