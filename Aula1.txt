@@ -1,3 +1,6 @@
+Microsoft Windows [versão 10.0.19045.3208]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
 C:\xampp\htdocs>git --version
 git version 2.41.0.windows.2
 
@@ -127,4 +130,69 @@ C:\xampp\htdocs\teste-git>git status
 On branch master
 nothing to commit, working tree clean
 
+C:\xampp\htdocs\teste-git>git log
+commit ea1e230cf40c1d9f0419e8077de529799c535252 (HEAD -> master)
+Author: rendrikson neves <rendriksonneves@gmail.com>
+Date:   Fri Jul 28 07:49:36 2023 -0300
+
+    Adicionado Aula1
+
+commit b2d0c182f1e7821272564af90aa941d671831157
+Author: rendrikson neves <rendriksonneves@gmail.com>
+Date:   Fri Jul 28 07:44:47 2023 -0300
+
+    Incluído Arroz e Feijão
+
+commit 2bab71c34cd9de89b8e710f6f0752f6cec57d4c8
+Author: rendrikson neves <rendriksonneves@gmail.com>
+Date:   Fri Jul 28 07:40:55 2023 -0300
+
+    Primeiro commit
+
+C:\xampp\htdocs\teste-git>git branch
+* master
+
+C:\xampp\htdocs\teste-git>git branch teste
+
+C:\xampp\htdocs\teste-git>git branch
+* master
+  teste
+
+C:\xampp\htdocs\teste-git>git checkout teste
+Switched to branch 'teste'
+M       Aula1.txt
+
+C:\xampp\htdocs\teste-git>git branch
+  master
+* teste
+
+C:\xampp\htdocs\teste-git>git add .
+
+C:\xampp\htdocs\teste-git>git commit -m "Commit Teste"
+[teste 3306073] Commit Teste
+ 2 files changed, 133 insertions(+), 2 deletions(-)
+
+C:\xampp\htdocs\teste-git>git status
+On branch teste
+nothing to commit, working tree clean
+
+C:\xampp\htdocs\teste-git>git checkout master
+Switched to branch 'master'
+
+C:\xampp\htdocs\teste-git>git branch
+* master
+  teste
+
+C:\xampp\htdocs\teste-git>git merge
+fatal: No remote for the current branch.
+
+C:\xampp\htdocs\teste-git>git merge teste
+Updating ea1e230..3306073
+Fast-forward
+ Aula1.txt | 131 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ lista.txt |   4 +-
+ 2 files changed, 133 insertions(+), 2 deletions(-)
+
 C:\xampp\htdocs\teste-git>
+
+
